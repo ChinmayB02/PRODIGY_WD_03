@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p>
+            Game starts by just tapping on a box.<br><br>
+            First Player starts as <b>Player X</b> and Second Player as <b>Player 0</b>.
+        </p>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="handlePlayerTurn('b1');">
+                <input type="text" id="b2" class="cell" onclick="handlePlayerTurn('b2');">
+                <input type="text" id="b3" class="cell" onclick="handlePlayerTurn('b3');">
+            </div>
+            <div class="row">
+                <input type="text" id="b4" class="cell" onclick="handlePlayerTurn('b4');">
+                <input type="text" id="b5" class="cell" onclick="handlePlayerTurn('b5');">
+                <input type="text" id="b6" class="cell" onclick="handlePlayerTurn('b6');">
+            </div>
+            <div class="row">
+                <input type="text" id="b7" class="cell" onclick="handlePlayerTurn('b7');">
+                <input type="text" id="b8" class="cell" onclick="handlePlayerTurn('b8');">
+                <input type="text" id="b9" class="cell" onclick="handlePlayerTurn('b9');">
+            </div>
+        </div>
+        <button id="but" onclick="myfunc_2()">
+            RESET
+        </button>
+        <p id="print"></p>
+        <p id="winner"></p>
+    </div>
+</body>
+
+</html>
